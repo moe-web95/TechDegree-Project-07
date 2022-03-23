@@ -141,8 +141,83 @@
                     </div>
                     <p>10/15/20</p>
                 </div>
-
-
+            </section>
+            <!--recent active widget-->
+            <section class = "members">
+                <h3>RECENT ACTIVITY</h3>
+                <div class = "members-container">
+                    <img src = "images/member-1.jpg" alt = "profile-image">
+                    <div class = "members-text">
+                        <p>Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></p>
+                        <p>4 hours ago</p>
+                    </div>
+                </div>
+                <div class = "members-container">
+                    <img src = "images/member-2.jpg" alt = "profile-image">
+                    <div class = "members-text">
+                        <p>Dale Byrd liked the post <strong>Facebook's Changes for 2021</strong></p>
+                        <p>5 hours ago</p>
+                    </div>
+                </div>
+                <div class = "members-container">
+                    <img src = "images/member-3.jpg" alt = "profile-image">
+                    <div class = "members-text">
+                        <p>Dawn Wood commented on <strong>Facebook's Changes for 2021</strong></p>
+                        <p>5 hours ago</p>
+                   </div>
+                </div>
+                <div class = "members-container">
+                    <img src = "images/member-4.jpg" alt = "profile-image">
+                    <div class = "members-text">
+                        <p>Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
+                        <p>1 day ago</p>
+                    </div>
+                </div>
+            </section>
+            <!--Messaging widget-->
+            <section class = "message">
+                <h3>MESSAGE USER</h3>
+                <form>
+                    <input type="text" id ="userField" class="form-field" 
+                    placeholder="Search for User">
+                    <textarea placeholder="Message for User" class="form-area" 
+                    id="messageField"></textarea>
+                    <button class = "button-primary" id="send">SEND</button>
+                </form>
+            </section>
+            <!--Local settings widget-->
+            <section class = "setting">
+                <h3>SETTINGS</h3>
+                <!--custom Css toggle code-->
+                <label class="switch-light switch-candy" onclick="">
+                    <input type="checkbox"> 
+                    <strong>Send Email Notifications</strong>
+                    <span class = "toggleOne">
+                        <span>OFF</span>
+                        <span>ON</span>
+                    </span>
+                </label>
+                <label class="switch-light switch-candy" onclick="">
+                    <input type="checkbox"> 
+                    <strong>Set Profile to Public</strong>
+                    <span class = "toggleTwo">
+                        <span>OFF</span>
+                        <span>ON</span>
+                    </span>
+                </label>
+                <select class = "form-field" id="timezone">
+                    <option disabled selected>Select TimeZone</option>
+                    <option>Eastern</option>
+                    <option>Middle East Time</option>
+                    <option>Pacific Standard Time</option>
+                    <option>Mountain Standard Time</option>
+                    <option>Central Standard Time</option>
+                    <option>Near East Time</option>
+                </select>
+                <div class= "settings-button">
+                    <button class="button-primary" id="save">SAVE</button>
+                    <button class="button-disabled" id="cancel">CANCEL</button>
+                </div>
             </section>
 
         </main> 
