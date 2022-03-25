@@ -124,7 +124,7 @@ nav img{
 }
 
 /*  Graphs & Charts Traffic*/
-.traffic{
+.data-set, .members-container{
     padding:0 15px;
     border-bottom: 3px solid #dfdfdf;
 }
@@ -147,6 +147,12 @@ nav img{
     font-weight: 600;
     padding : 7px;
     border-radius: 5px;
+}
+
+/* Social status*/
+.social-image  {
+    width:50px;
+    background-color: #7477bf;
 }
 
  
