@@ -125,18 +125,28 @@ nav img{
 
 /*  Graphs & Charts Traffic*/
 .traffic{
-    padding:0 15px;
+    padding:0 10px;
     border-bottom: 3px solid #dfdfdf;
+}
+.traffic_header h3 {
+    padding: 15px 0;
 }
 
 .traffic_nav {
     display:flex;
     align-items:center;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     list-style: none;
+    padding-right: 10%;
+    margin-left: -30px;
+    margin-top: 10px;
 }
-.traffic_nav li {
-    padding: 0 20px 20px 20px;
+.traffic_nav li:first-child {
+    background-color:#90ee90;
+    color:#fff;
+    font-weight: 600;
+    padding : 7px;
+    border-radius: 5px;
 }
 
  
