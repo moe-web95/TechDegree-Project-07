@@ -28,8 +28,7 @@
     width: 20px;
     fill: #f2f2f2;
  }
-
- /* header left-right*/
+/* header left-right*/
  .header-left,.header-right {
      display: flex;
      align-items: center;
@@ -42,8 +41,7 @@
  .header-left sup {
      font-weight: 100;
  }
-
- /*header right*/
+/*header right*/
  .header-right{
     justify-content: flex-end;
     
@@ -110,9 +108,10 @@ nav img{
     border-bottom: 2px solid #ccc; 
 }
 
-/*Alert*/
+/*Alert */
 .alert-container {
-    display:flex;
+    
+    display:block;
     justify-content: space-between;
     align-items: center;
     background-color:#7477bf;
@@ -177,19 +176,50 @@ nav img{
  /*Main*/
  main {
      grid-area: main;
-    
- }
+}
+
+/*widget-container-full and----
+----widget-container-half*/
+    .widget-container-full, .widget-container-half {
+        width:95vw;
+        }
  /*@Media Query Min-Width(768)*/
-/* @media (min-width: 768px){
+ @media (min-width: 768px){
      .grid-container{
-         grid-template-columns: 55fr 1fr;
+         grid-template-columns: 55px 1fr;
          grid-template-rows: auto;
          grid-template-areas: 
          "header header"
-         "navigation main";
+         "nav main";
      }
-     .main {
+     main {
          display: grid;
-         grid-template-columns: 50%;
+         grid-template-columns:50%;
      }
- }*/
+     .traffic, .social {
+         grid-column: 1, span 2;
+     }
+     
+     .daily, .members, .message{
+         grid-column: 1, span 1;
+     }
+     .mobile, .activity, .setting {
+         grid-column: 2 / span 1;
+     }
+     /*widget-container-full and----
+        ----widget-container-half*/
+     .widget-container-full {
+        width:90vw;
+     }
+     .widget-container-half{
+         width:45vw;
+     }
+    /* Nav Bar */
+    nav{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+ }
