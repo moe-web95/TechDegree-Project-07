@@ -21,7 +21,7 @@ alertBanner.addEventListener('click', e =>{
 
 
 // Chart Widgets
-//Line Graph
+//Line Chart Graph
 const trafficCanvas = document.getElementById("traffic-chart");
 let trafficData = {
     labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
@@ -59,7 +59,7 @@ let trafficChart = new Chart (trafficCanvas, {
     options: trafficOptions
  });
 
- //Bar Graph
+ //Bar Chart Graph
  const dailyCanvas = document.getElementById("daily-chart");
  //data for daily traffic bar chart,
  const dailyData = {
@@ -104,3 +104,38 @@ let trafficChart = new Chart (trafficCanvas, {
         ]
     }]
  };
+
+ const mobileOptions = {
+     aspectRatio: 1.9,
+     plugins: {
+         legend: {
+             position: 'right',
+             labels: {
+                 boxWidth: 20,
+                 fontStyle: 'bold'
+             }
+         }
+     }
+ };
+ let mobileChart = new Chart(mobileCanvas, {
+     type: 'doughnut',
+     data: mobileData,
+     options: mobileOptions
+ });
+
+ //Messaging Section
+ const user = document.getElementById("userField");
+const message = document.getElementById("messageField");
+const send = document.getElementById("send");
+//create eventlistener
+send.addEventListener('click', ()=> {
+    if( user.value === "" && message.value === "") {
+        alert("Please fill out user and message fields before sending");
+    }else if (user.value === "") {
+        alert("Please fill out user field before sending");
+    }else if (message.value === ""){
+        alert("Please fill out message field before sending");
+    }else {
+        alert(`Message successfully sent to: ${user.value}`);
+    }
+});
