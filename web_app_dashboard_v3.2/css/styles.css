@@ -8,6 +8,10 @@
  body {
     font-family: 'Open Sans', sans-serif;
  }
+ h1, h2, h3 {
+    font-weight: bolder;
+    color: black;
+}
  /*widget-container-full and widget-container-half*/
 .widget-container-full, 
 .widget-container-half {
@@ -26,6 +30,7 @@
 }
 
  /*  Header*/
+ 
  header {
     grid-area: header;
     display: flex;
@@ -98,7 +103,7 @@
  .active-container,
  .message {
      border-bottom: 2px solid #ccc;
-     padding:10px 0 20px 0;
+     padding:10px
  }
  /* Navigation*/
  nav{
@@ -120,6 +125,7 @@ nav img{
 /* Main Dashboard*/
 main {
     grid-area: main;
+    justify-content: center;
 }
 .dashboard-header {
     display: flex;
@@ -154,15 +160,12 @@ main {
     font-size: 14px;
 }
 
-/*  Graphs & Charts */
-
-
+/*  Line Graphs  */
 .traffic-nav {
     display:flex;
     align-items:center;
     justify-content:space-evenly;
     list-style: none;
-  
     margin-top: 10px;
     font-weight: bold;
 }
@@ -170,13 +173,16 @@ main {
     background-color:#90ee90;
     color:#fff;
     font-weight: 600;
-    padding : 7px;
+    /*padding : 7px;*/
     border-radius: 5px;
 }
 /*Doughnut chart*/
+.mobile h3{
+    padding:20px auto;
+    margin-bottom: 20px;
+}
 
-
-/* Social status*/
+/* Social Status*/
 .social {
     display: flex;
     background:#edebf2;
@@ -214,10 +220,22 @@ main {
     font-size:28px;
     font-weight: bold;
 }
-/* New Members*/
+
+/* New Members with some Recent active*/
+ .members, .active h3 {
+     padding:10px;
+ }
 .members img {
     border-radius: 50%;
     height:60px;
+}
+.members-text p:first-child{
+    font-weight: bold;
+    color: #000;
+}
+.members-container p {
+    font-weight: bold;
+    color: #000;
 }
 .members-text a {
     text-decoration: none;
@@ -229,7 +247,24 @@ main {
     font-size: 14px;
     
 }
-
+.members-container, .active-container {
+    text-align: center;
+}
+.members-text, .active-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    color:#000
+}
+/*Recent Active*/
+.active-container img {
+    border-radius: 50%;
+    height:60px;
+}
+.active-text strong {
+    font-weight: bold;
+    color: #000;
+}
 .daily, .mobile, .social-data {
 	padding: 10px 0 10px 15px;
 	
