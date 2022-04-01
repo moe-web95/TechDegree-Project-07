@@ -97,7 +97,7 @@ let trafficChart = new Chart (trafficCanvas, {
         label: '# of Users',
         data: [2000, 550, 500],
         borderWidth: 0,
-        backgroungColor: [
+        backgroundColor: [
             '#7477BF',
             '#78CF82',
             '#51B6C8'

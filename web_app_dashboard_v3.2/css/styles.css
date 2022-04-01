@@ -156,17 +156,13 @@ main {
 
 /*  Graphs & Charts */
 
-.traffic-header{
-    padding-left: 15px ;
-}
 
 .traffic-nav {
     display:flex;
     align-items:center;
     justify-content:space-evenly;
     list-style: none;
-    padding-right: 10%;
-    margin-left: -30px;
+  
     margin-top: 10px;
     font-weight: bold;
 }
@@ -181,11 +177,18 @@ main {
 
 
 /* Social status*/
+.social {
+    display: flex;
+    background:#edebf2;
+    border:1px solid #c7c7c7;
+    border-radius:10px;
+    margin:3%;
+}
 .social-image {
     display:inline-flex;
     flex-direction: row;
-    width: 65px;
-    height: 65px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     margin: auto 5%;
     background-color:  #8e8adb;
@@ -194,20 +197,39 @@ main {
 }
 .social-image img {
     filter: invert(1);
+    padding: 15px;
    
    
 }
 .social-text {
-    padding-left:50px;
-    text-align:center;
+  text-align: center;
 }
-.social {
+.social-text p:first-child {
+    color: #8e8adb;
+    font-size: 14px;
+    font-weight:bold;
+}
+.social-text p:nth-child(2) {
+    color:#6f707a;
+    font-size:28px;
+    font-weight: bold;
+}
+/* New Members*/
+.members img {
+    border-radius: 50%;
+    height:60px;
+}
+.members-text a {
+    text-decoration: none;
+}
+.members-text {
     display: flex;
-    margin:10px 10px;
-    border: 1px solid #c7c7c7;
-    border-radius: 10px;
-    background-color:#edebf2;
+    flex-direction: column;
+    color:black;
+    font-size: 14px;
+    
 }
+
 .daily, .mobile, .social-data {
 	padding: 10px 0 10px 15px;
 	
