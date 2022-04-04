@@ -294,6 +294,11 @@ main {
     background-color: #8e8adb;
     color: #f3f2f7;
 }
+/* Local setting widget*/
+.setting {
+    display: flex;
+    flex-direction: column;
+}
 .daily, .mobile, .social-data {
 	padding: 10px 0 10px 15px;
 	
