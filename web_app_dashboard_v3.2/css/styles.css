@@ -298,7 +298,17 @@ main {
 .setting {
     display: flex;
     flex-direction: column;
+    margin:15px;
 }
+
+.form-field {
+    width: 90%;
+}
+.setting-button {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .daily, .mobile, .social-data {
 	padding: 10px 0 10px 15px;
 	
