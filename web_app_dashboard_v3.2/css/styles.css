@@ -149,7 +149,7 @@ main {
 /*Alert */
 .alert {
     
-    display:block;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     background-color:#7477bf;
@@ -158,6 +158,9 @@ main {
     margin:15px;
     border-radius: 5px;
     font-size: 14px;
+}
+.alert-banner-close {
+    justify-content: flex-end;
 }
 
 /*  Line Graphs  */
@@ -296,12 +299,28 @@ main {
 }
 /* Local setting widget*/
 .setting {
-    display: flex;
-    flex-direction: column;
-    margin:15px;
-    padding:10px;
+    margin:initial;
 }
-
+ .switch-light, .switch-ios{
+    display:flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+    text-align: center;
+    margin:10px 0;
+}
+ .switch-light, .switch-ios span {
+    flex-basis: 100px;;
+}
+.switch-light, .switch-ios strong{
+    flex-basis: 200px;
+}
+.switch-light, .switch-ios input:checked ~ span {
+    border-color: #8e8adb;
+    box-shadow: insert 0 0 0 30px #8e8adb;
+}
+.switch-light, .switch-ios input:checked ~ span a{
+    border-color:#8e8adb;
+}
 .form-field {
     width: 100%;
 }
