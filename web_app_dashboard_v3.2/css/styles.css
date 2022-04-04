@@ -4,6 +4,10 @@
     box-sizing: border-box;
     
  }
+ canvas {
+    max-width: 100%;
+}
+ 
  /* front style*/
  body {
     font-family: 'Open Sans', sans-serif;
@@ -12,11 +16,7 @@
     font-weight: bolder;
     color: black;
 }
- /*widget-container-full and widget-container-half*/
-.widget-container-full, 
-.widget-container-half {
-    width:95vw;
-}
+ 
  /* Grid Container*/
  .grid-container {
     display:grid;
@@ -148,7 +148,6 @@ main {
 
 /*Alert */
 .alert-banner {
-    
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -364,28 +363,47 @@ main {
          "header header"
          "nav main";
      }
+    
+     header {
+         grid-area: header;
+     }
+     nav {
+         grid-area: nav;
+     }
      main {
+        grid-area: main;
          display: grid;
          grid-template-columns:50%;
      }
-     .traffic, .social {
-         grid-column: 1, span 2;
+     /*100% Width column*/
+     .dashboard-header,
+     .alert,
+     .traffic,
+     .traffic-header,
+     .social-data,
+     .active,
+     .message,
+     .setting {
+        grid-column: 1 / span 2;
      }
-     
-     .daily, .members, .message{
-         grid-column: 1, span 1;
+
+     /*50% width left column*/
+     .daily {
+        grid-column: 1 / span1;
      }
-     .mobile, .activity, .setting {
-         grid-column: 2 / span 1;
+     /*50% width right column*/
+     .mobile {
+        grid-column: 2 / sapn 1;
      }
+
      /*widget-container-full and----
-        ----widget-container-half*/
+        ----widget-container-half
     
      .widget-container-full {
         width:90vw;
      }
      .widget-container-half{
-         width:45vw;
+         width:45vw;*/
      }
     /* Nav Bar */
     nav{
