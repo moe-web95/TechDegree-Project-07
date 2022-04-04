@@ -147,7 +147,7 @@ main {
 }
 
 /*Alert */
-.alert {
+.alert-banner {
     
     display:flex;
     justify-content: space-between;
@@ -159,9 +159,7 @@ main {
     border-radius: 5px;
     font-size: 14px;
 }
-.alert-banner-close {
-    justify-content: flex-end;
-}
+
 
 /*  Line Graphs  */
 .traffic-nav {
