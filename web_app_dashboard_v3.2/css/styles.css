@@ -269,11 +269,10 @@ main {
 /*Message Widget*/
 .form {
     display:flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 600px;
-    
-   
+    flex-wrap: wrap;
+}
+.form > * {
+    flex-basis:100%;
 }
 .form-field, .form-area, .button-send {
     border:2px solid #c7c7c7;
@@ -281,27 +280,19 @@ main {
     padding:10px;
     font-size: 14px;
     border-radius: 5px;
-    
-    
 }
 .form-field {
     background-color: #edebf2;
     color:#c7c7c7;
-   
-   
-    
 }
 .form-area{
-   
     background-color: #edebf2;
     color:#c7c7c7;
+    height:10rem;
 }
 .button-send{
     background-color: #8e8adb;
     color: #f3f2f7;
-  
-    padding: 15px 32px;
-    
 }
 .daily, .mobile, .social-data {
 	padding: 10px 0 10px 15px;
