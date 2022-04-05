@@ -399,7 +399,9 @@ main {
      .mobile {
         grid-column: 2 / span 1;
      }
-
+     .social-data{
+         grid-column: repeat(200px, 3);
+     }
      /*--- setting ----*/
      /*.switch-light, .switch-ios strong {
          text-align: left;
@@ -407,7 +409,7 @@ main {
 
 }
 /* media Query Min-width(1024px)*/
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
     .grid-container{
         grid-template-columns: 55px 1fr 1fr;
         grid-template-rows: auto;
@@ -422,8 +424,11 @@ main {
     .traffic-header {
         grid-column: 1 / span 3;
     }
-  
+    .social {
+        display:flex;
+        flex-basis: 200px;
+    }
     
 
     
-}
+}*/
