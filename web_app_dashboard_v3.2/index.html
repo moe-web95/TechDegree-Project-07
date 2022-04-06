@@ -156,12 +156,14 @@
             <!--recent active widget-->
             <section class = "active">
                 <h3>RECENT ACTIVITY</h3>
+                
                 <div class = "active-container">
                     <img src = "images/member-1.jpg" alt = "profile-image">
                     <div class = "active-text">
                         <p>Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></p>
                         <p>4 hours ago</p>
                     </div>
+                    <p>&gt;</p>
                 </div>
                 <div class = "active-container">
                     <img src = "images/member-2.jpg" alt = "profile-image">
@@ -169,6 +171,7 @@
                         <p>Dale Byrd liked the post <strong>Facebook's Changes for 2021</strong></p>
                         <p>5 hours ago</p>
                     </div>
+                    <p>&gt;</p>
                 </div>
                 <div class = "active-container">
                     <img src = "images/member-3.jpg" alt = "profile-image">
@@ -176,6 +179,7 @@
                         <p>Dawn Wood commented on <strong>Facebook's Changes for 2021</strong></p>
                         <p>5 hours ago</p>
                    </div>
+                   <p>&gt;</p>
                 </div>
                 <div class = "active-container">
                     <img src = "images/member-4.jpg" alt = "profile-image">
@@ -183,6 +187,7 @@
                         <p>Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
                         <p>1 day ago</p>
                     </div>
+                    <p>&gt;</p>
                 </div>
             </section>
             <!--Messaging widget-->
@@ -200,24 +205,27 @@
             <section class = "setting">
                 <h3>SETTINGS</h3>
                 <!--custom Css toggle code-->
-                <label class="switch-light switch-ios" style="width: 100px" onclick="">
-                    <input type="checkbox"> 
-                    <strong>Send Email Notifications</strong>
-                    <span>
-                        <span>OFF</span>
-                        <span>ON</span>
-                        <a></a>
-                    </span>
-                </label>
-                <label class="switch-light switch-ios" style="width: 100px"onclick="">
-                    <input type="checkbox"> 
-                    <strong>Set Profile to Public</strong>
-                    <span >
-                        <span>OFF</span>
-                        <span>ON</span>
-                        <a></a>
-                    </span>
-                </label>
+                <div class = "toggle-switch">
+                    <label class="switch-light switch-ios" style="width: 100px" onclick="">
+                        <input type="checkbox"> 
+                        <strong>Send Email Notifications</strong>
+                        <span>
+                            <span>OFF</span>
+                            <span>ON</span>
+                            <a></a>
+                        </span>
+                    </label>
+                    <label class="switch-light switch-ios" style="width: 100px"onclick="">
+                        <input type="checkbox"> 
+                        <strong>Set Profile to Public</strong>
+                        <span >
+                            <span>OFF</span>
+                            <span>ON</span>
+                            <a></a>
+                        </span>
+                    </label>
+                </div>
+                
                 <select class = "form-field" id="timezone">
                     <option disabled selected>Select TimeZone</option>
                     <option>Eastern</option>

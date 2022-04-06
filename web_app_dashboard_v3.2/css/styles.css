@@ -377,6 +377,7 @@ main {
         grid-area: main;
          display: grid;
          grid-template-columns:50%;
+         justify-content: unset;
      }
      /*100% Width column*/
      .dashboard-header,
@@ -399,9 +400,36 @@ main {
      .mobile {
         grid-column: 2 / span 1;
      }
-     .social-data{
-         grid-column: repeat(200px, 3);
+     
+    /*Social stats*/
+     .social-container{
+         display:flex;
+         flex-wrap:wrap;
+         
      }
+     .social-container h3{
+         flex-basis: 100%;
+     }
+     .social-container .social{
+         flex-basis: 31.333%;
+         margin: 10px 10px 10px 0px;
+         padding:10px;
+    }
+    /*New Members*/
+    .members-container, .active-container{
+        display: flex;
+        align-items: center;
+    
+    }
+    .members-text, .active-text {
+        margin-left:14px;
+        text-align: left;
+    }
+    .members-container > p,
+    .active-container > p {
+        margin-left:auto;
+    }
+}
      /*--- setting ----*/
      /*.switch-light, .switch-ios strong {
          text-align: left;
@@ -417,7 +445,7 @@ main {
         "header header header"
         "nav main main";
     }
-    /*Class Parents*/
+    
     .dashboard,
     .alert,
     .traffic,
