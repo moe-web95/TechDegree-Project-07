@@ -399,6 +399,7 @@ main {
      /*50% width right column*/
      .mobile {
         grid-column: 2 / span 1;
+        border-left:2px solid #ccc;
      }
      
     /*Social stats*/
@@ -430,33 +431,52 @@ main {
         margin-left:auto;
     }
 }
-     /*--- setting ----*/
-     /*.switch-light, .switch-ios strong {
-         text-align: left;
-     }*/
+     
 
-}
 /* media Query Min-width(1024px)*/
-/*@media (min-width: 1024px) {
-    .grid-container{
-        grid-template-columns: 55px 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "header header header"
-        "nav main main";
-    }
-    
-    .dashboard,
-    .alert,
-    .traffic,
-    .traffic-header {
-        grid-column: 1 / span 3;
-    }
-    .social {
-        display:flex;
-        flex-basis: 200px;
-    }
-    
+ @media (min-width: 1024px) {
+    /*50% width left column*/
+     .members, 
+     .message {
+         grid-column: 1 / span 1;
+        }
+     .active, .setting {
+         grid-column: 2 / span 1;
+         border-left: 2px solid #ccc;
 
+     }
     
-}*/
+     .active > h3{
+         padding:0;
+     }
+     .active {
+         padding:10px;
+     }
+     .message h3 {
+        padding:10px;
+    }
+     .active-text *, .members-text * {
+         font-size: 14px;
+     }
+     .message, .setting {
+         display:flex;
+         flex-direction: column;
+     }
+     .message {
+         padding:0;
+     }
+     .form, .form-field {
+         margin-top: auto;
+
+     }
+     .button-send {
+        border: 1px solid #c7c7c7;
+        background-color: #8e8adb;
+        color:#fff;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        border-radius: 10px;
+        height:45px;
+    } 
+     
