@@ -315,10 +315,22 @@ main {
     flex-basis: 200px;
     text-align: left;
     margin-left:5px;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-
+    /*margin-bottom: 12px;
+    padding-bottom: 12px;*/
 }
+/* EXAMPLE*/
+ .setting h3 {
+    padding-top: 0;
+  }
+  
+  .switch-ios {
+    align-items: center;
+  }
+  
+  .setting label:first-of-type {
+    margin: 15px 5px 30px;
+  }
+
 .switch-light, .switch-ios input:checked ~ span {
     border-color: #8e8adb;
     box-shadow: insert 0 0 0 30px #8e8adb;
