@@ -345,9 +345,10 @@ main {
 
 .daily, .mobile, .social-data {
 	padding: 10px 0 10px 15px;
-	
 }
-
+.form, .setting {
+    padding:10px;
+}
 
  /*@Media Query Min-Width(768)*/
  @media (min-width: 768px){
@@ -377,8 +378,7 @@ main {
         grid-area: main;
          display: grid;
          grid-template-columns:50%;
-         justify-content: unset;
-     }
+    }
      /*100% Width column*/
      .dashboard-header,
      .alert,
@@ -435,6 +435,9 @@ main {
 
 /* media Query Min-width(1024px)*/
  @media (min-width: 1024px) {
+     main{
+        justify-content: unset;
+     }
     /*50% width left column*/
      .members, 
      .message {
@@ -479,4 +482,8 @@ main {
         border-radius: 10px;
         height:45px;
     } 
+    .message{
+        border-bottom: none;
+    }
+}
      
