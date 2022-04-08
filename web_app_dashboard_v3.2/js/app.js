@@ -128,8 +128,9 @@ let trafficChart = new Chart (trafficCanvas, {
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
 //create eventlistener
-send.addEventListener('click', ()=> {
+send.addEventListener('click', e=> {
     if( user.value === "" && message.value === "") {
+        e.preventDefault();
         alert("Please fill out user and message fields before sending");
     }else if (user.value === "") {
         alert("Please fill out user field before sending");
