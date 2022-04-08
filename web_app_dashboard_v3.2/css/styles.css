@@ -201,11 +201,9 @@ main {
     
     
 }
-.social-image img {
+.social-image svg {
     filter: invert(1);
     padding: 15px;
-   
-   
 }
 .social-text {
   text-align: center;
